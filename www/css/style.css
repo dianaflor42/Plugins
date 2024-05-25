@@ -1,0 +1,47 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('sim.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            background-color: rgba(216, 114, 173, 0.8); /* Fundo do formulário com opacidade reduzida */
+            padding: 30px; /* Aumentando o padding para aumentar o tamanho do formulário */
+            border-radius: 8px;
+            border: 2px solid rgba(0, 0, 0, 0.1); /* Adicionando uma borda ao formulário */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #fff;
+        }
+        button {
+            background-color: rgba(250, 241, 119, 0.8); /* Cor do botão com opacidade reduzida */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: rgba(235, 209, 45, 0.8); /* Cor do botão ao passar o mouse com opacidade reduzida */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/submit" method="post">
+            <h2>Plugins</h2>
+            <button type="submit" id="nome">Notificar</button>
+            <button type="submit" id="nome">Beep</button>
+            <button type="submit" id="nome">Vibrar</button>
+        </form>
+    </div>
+  </body>  
